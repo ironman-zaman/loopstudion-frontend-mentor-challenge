@@ -1,3 +1,5 @@
+/*Variables*/
+/*General Styles**/
 * {
   padding: 0px;
   margin: 0px;
@@ -7,5 +9,100 @@
 
 html, body {
   height: 100%;
+}
+
+body {
+  font-family: "Alata", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/*General styles ends*/
+header .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+header .header ul li a {
+  padding: 10px 30px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+
+header .header ul li a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+header .header ul li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.hero {
+  background: url(../images/desktop/image-hero.jpg);
+  background-size: cover;
+  background-position: center center;
+  margin-top: -100px;
+}
+
+.hero .container .hero-wrapper {
+  min-height: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .container .hero-wrapper .hero-inner {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  border: 1px solid white;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.hero .container .hero-wrapper .hero-inner h1 {
+  color: white;
+  font-size: 4.5rem;
+  line-height: 1.1em;
 }
 /*# sourceMappingURL=style.css.map */

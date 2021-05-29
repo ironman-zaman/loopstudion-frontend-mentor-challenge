@@ -1,3 +1,11 @@
+/*Variables*/
+$titleFont : 'Josefin Sans', sans-serif;
+$bodyFont : 'Alata', sans-serif;
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$darkGray: hsl(0, 0%, 55%);
+$veryDarkGray: hsl(0, 0%, 41%);
+/*General Styles**/
 *{
     padding:0px;
     margin:0px;
@@ -5,4 +13,82 @@
 }
 html,body{
     height: 100%;
+}
+body{
+    font-family: $bodyFont;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: $titleFont;
+    text-transform: uppercase;
+}
+.container{
+    max-width: 1300px;
+    margin:0 auto;
+}
+/*General styles ends*/
+header{
+    .header{
+        display: flex;
+        justify-content: space-between;
+        min-height: 100px;
+        align-items: center;
+    }
+    .header{
+        ul{
+            display: flex;
+            list-style-type: none;
+            li a{
+                padding:10px 30px;
+                display: block;
+                text-decoration: none;
+                color:$white;
+                position: relative;
+                letter-spacing: 2px;
+                font-size:1.1rem;
+                &::after{
+                    background: none repeat scroll 0 0 transparent;
+                    bottom: 0;
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    left: 50%;
+                    position: absolute;
+                    background: #fff;
+                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                    width: 0;
+                }
+            }
+            li a:hover:after{
+                width: 100%; 
+                left: 0; 
+            }
+        }
+    }
+}
+.hero{
+    background: url(../images/desktop/image-hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin-top:-100px;
+    .container{
+        .hero-wrapper{
+            min-height: 750px;
+            display: flex;
+            align-items: center;
+            .hero-inner{
+                flex-basis: 50%;
+                border:1px solid $white;
+                padding:30px;
+                margin-top:50px;
+                h1{
+                    color:$white;
+                    font-size:4.5rem;
+                    line-height: 1.1em;
+                }
+            }
+        }
+        
+        
+    }
+    
 }
