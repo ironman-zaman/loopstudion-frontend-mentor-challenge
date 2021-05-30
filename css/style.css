@@ -105,4 +105,83 @@ header .header ul li a:hover:after {
   font-size: 4.5rem;
   line-height: 1.1em;
 }
+
+.about {
+  margin: 100px 0px;
+}
+
+.about .about-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .about-inner .about-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.about .about-inner .about-text .about-text-inner {
+  background: #ffffff;
+  padding: 100px 0px 0px 100px;
+  margin-left: -135px;
+}
+
+.about .about-inner .about-text .about-text-inner h2 {
+  font-size: 4.5rem;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.about .about-inner .about-text .about-text-inner p {
+  color: #8c8c8c;
+}
+
+.creations .title-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.creations .title-btn h2 {
+  font-size: 3rem;
+}
+
+.creations .title-btn a.btn {
+  background: black;
+  padding: 15px 30px;
+  color: white;
+}
+
+.creations .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.creations .grid .single-grid {
+  -ms-flex-preferred-size: 24%;
+      flex-basis: 24%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background: red;
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=style.css.map */

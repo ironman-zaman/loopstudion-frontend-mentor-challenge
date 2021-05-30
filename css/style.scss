@@ -5,6 +5,8 @@ $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
 $darkGray: hsl(0, 0%, 55%);
 $veryDarkGray: hsl(0, 0%, 41%);
+$title1FontSize:4.5rem;
+$title2FontSize:3rem;
 /*General Styles**/
 *{
     padding:0px;
@@ -82,13 +84,61 @@ header{
                 margin-top:50px;
                 h1{
                     color:$white;
-                    font-size:4.5rem;
+                    font-size:$title1FontSize;
                     line-height: 1.1em;
                 }
             }
         }
-        
-        
     }
-    
+}
+
+.about{
+    margin:100px 0px;
+    .about-inner{
+        display: flex;
+        .about-text{
+            display: flex;
+            align-items: flex-end;
+            .about-text-inner{
+                background:#ffffff;
+                padding:100px 0px 0px 100px;
+                margin-left:-135px;
+                h2{
+                    font-size: $title1FontSize;
+                    color:$black;
+                    margin-bottom: 20px;
+                }
+                p{
+                    color: $darkGray;
+                }
+            }
+        }
+    }
+}
+.creations{
+    .title-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    h2{
+        font-size: $title2FontSize;
+    }
+    a.btn{
+        background: $black;
+        padding:15px 30px;
+        color: $white;
+    }
+}
+.grid{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+.single-grid{
+flex-basis: 24%;
+display: flex;
+align-items: flex-end;
+background: red;
+margin-bottom: 20px;
+}
+}
 }
